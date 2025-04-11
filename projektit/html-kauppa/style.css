@@ -36,9 +36,9 @@
     color: #E9ECEF;
     background-color: rgb(8, 143, 56);
     padding: 20px;
-    position: fixed;
     width: 100%;
     height: 50px;
+    flex-wrap: wrap;
 }
 
 @font-face {
@@ -88,7 +88,6 @@ body {
     align-items: center;
     background-color: #23272B;
     color: #E9ECEF;
-    position: fixed;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -98,13 +97,9 @@ body {
     flex-direction: column;
     max-width: 100%;
     width: var(--sivun-leveys);
+    flex-wrap: wrap;
 }
 
-@media(max-width:970px) {
-    .yläpalkki_sisältö{
-        flex-wrap: wrap;
-    }
-}
 
 .sivun-yläpalkki__ylempi-rivi {
     display: flex;
@@ -295,16 +290,9 @@ body {
 .seksioni {
     display: flex;
     background-color: white;
-    height: 500px;
+    height: 10px;
     min-width: 100%;
     max-width: 100%;
-}
-
-@media(max-width:950px){
-    .seksioni{
-        display: flex;
-        flex-wrap: wrap;
-    }
 }
 
 .sivun-alapalkki {
@@ -934,6 +922,7 @@ body {
     align-items: center;
     max-width: 100%;
     min-width: 100%;
+    flex-wrap: wrap;
 }
 
 .ehdot-copyright__ehdot-lista {
