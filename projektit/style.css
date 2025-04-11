@@ -1,0 +1,48 @@
+body {
+    background-color: grey;
+    font-family: RobotoMono;
+}
+
+@font-face {
+    font-family: RobotoMono;
+    src: url(RobotoMono-Italic-VariableFont_wght.ttf);
+}
+
+.Otsikko {
+    padding-left: 25px;
+    display: flex;
+    color: rgb(251, 251, 251);
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    width: 250px;
+    height: 3px;
+    background-color: gold;
+}
+
+.projekti_otsikko {
+    display: flex;
+    padding-left: 25px;
+    color: rgb(251, 251, 251);
+}
+
+.lista {
+    display: flex;
+    text-decoration: none;
+    color: rgb(251, 251, 251);
+    gap: 5px;
+}
+
+.lista_rimp´s{
+    display: flex;
+    text-decoration: none;
+    color: rgb(251, 251, 251);
+}
+
+.lista_rimp´s:hover {
+    display: flex;
+    color: orangered;
+}
