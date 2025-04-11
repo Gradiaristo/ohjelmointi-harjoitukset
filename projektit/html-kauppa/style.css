@@ -334,6 +334,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-right: 15px;
+    flex-wrap: wrap;
 }
 
 .asiakaspalvelu {
@@ -341,6 +342,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: var(--gap-1x);
+    flex-wrap: wrap;
 }
 
 .asiakaspalvelu__otsikko {
@@ -540,6 +542,13 @@ body {
     flex-direction: row;
     color: #E9ECEF;
     text-decoration: none;
+    flex-wrap: wrap;
+}
+
+@media(max-width:650px){
+    .yhteisöt_someikonit{
+        display: none;
+    }
 }
 
 .facebook {
