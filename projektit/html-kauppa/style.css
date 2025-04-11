@@ -96,9 +96,14 @@ body {
 .yläpalkki_sisältö {
     display: flex;
     flex-direction: column;
-    width: 1320.8px;
     max-width: 100%;
     width: var(--sivun-leveys);
+}
+
+@media(max-width:970px) {
+    .yläpalkki_sisältö{
+        flex-wrap: wrap;
+    }
 }
 
 .sivun-yläpalkki__ylempi-rivi {
@@ -154,6 +159,12 @@ body {
     border-color: grey;
     height: 50;
     flex: 1 1 auto;
+}
+
+@media(max-width:970px){
+    .hakupalkki{
+        display: none;
+    }
 }
 
 .hakupalkki_sisältö {
@@ -284,10 +295,16 @@ body {
 .seksioni {
     display: flex;
     background-color: white;
-    min-height: 500px;
-    max-height: 500px;
-    min-width: var(--sivun-leveys);
+    height: 500px;
+    min-width: 100%;
     max-width: 100%;
+}
+
+@media(max-width:950px){
+    .seksioni{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .sivun-alapalkki {
@@ -677,6 +694,12 @@ body {
     display: flex;
     flex-direction: column;
     padding: var(--gap-1x);
+}
+
+@media(max-width:950px){
+    .uutiskirje{
+        display: none;
+    }
 }
 
 .uutiskirje__tilaa-otsikko {
